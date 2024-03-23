@@ -18,7 +18,7 @@ In this project, I have used a convolutional neural network architecture for cla
 * Operating System (built-in library, use "import os")
 
 ## Data Processing  
-First step here is to generate data, I have jpeg images of the head CT. To make sure all images which are going to fed to the network are pre-processed for it to learn and analyze those images accurately.    
+First step here is to generate data, I have jpeg images of the head CT. To make sure all images which are going to be fed to the network are pre-processed for it to learn and analyze those images accurately.    
 
  
 We need to import *ImageDataGenerator* from Keras library.
