@@ -13,6 +13,7 @@ In this project, I used a convolutional neural network (CNN) architecture to cla
 |   |– cnn_model.py          # CNN model architecture script
 |– README.md                 # Project documentation
 |– requirements.txt          # List of dependencies
+```
 
 ## Libraries Required
 * Python 3.6+
