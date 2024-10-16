@@ -4,6 +4,8 @@
 In this project, I used a convolutional neural network (CNN) architecture to classify patients suffering from hemorrhage by analyzing head CT images. The dataset consists of two classes: "Normal" for healthy patients and "Hemorrhage" for unhealthy ones.
 
 ## Project Structure
+
+```plaintext
 |– data/                     # Directory to store datasets
 |– models/                   # Directory for storing trained models
 |– src/                      # Python scripts and modules
