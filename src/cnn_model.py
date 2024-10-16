@@ -2,6 +2,7 @@ import tensorflow as tf
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization
 
+# First we are going to build the CNN model
 def build_cnn_model():
     Model = Sequential()
 
@@ -35,3 +36,17 @@ def train_model(model, Train_IMG_Set, Validation_IMG_Set):
                     epochs=50)
     
     return CNN_Model
+
+# Now we are going to train our CNN model on our dataset
+# Early stopping callback
+Call_Back = tf.keras.callbacks.EarlyStopping(monitor="loss", patience=5, mode="min")
+
+# Compiling the CNN model
+Model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy"])
+
+# Training the CNN model
+CNN_Model = Model.fit(Train_IMG_Set,
+                      validation_data=Validation_IMG_Set,
+                      callbacks=Call_Back,
+                      batch_size=32,
+                      epochs=50)
