@@ -46,6 +46,12 @@ Train the CNN model using the command below:
 python src/cnn_model.py
 ```
 
+### Evaluating the Model
+After training, we evaluate the performance of the CNN model on the test dataset and make predictions.
+``` bash
+python src/evaluate_cnn_model.py
+```
+
 ## Results
 After training and evaluating the CNN model, it achieved an accuracy of *96%* in predicting/classifying hemorrhage using head CT images, with a training loss of *0.1184*.
 
